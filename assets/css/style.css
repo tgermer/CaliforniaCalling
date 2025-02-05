@@ -26,25 +26,41 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #fff;
 }
 
 img {
     max-width: 100%;
 }
 
-:root {
-    --color-dark-bg: #000;
-    --color-dark-text: #000;
+@media (prefers-color-scheme: light) {
+    /* CSS für helles Farbschema */
+    :root {
+        --color-dark-bg: hsl(253, 67%, 42%);
+    --color-dark-text: #4223b3;
     --color-light-bg: #ffffff;
     --color-light-text: #fff;
+    }
 
+    .img-a {
+        filter: url(#color-filter);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    /* CSS für dunkles Farbschema */
+    :root {
+        --color-dark-bg: #000;
+        --color-dark-text: #000;
+        --color-light-bg: #ffffff;
+        --color-light-text: #fff;
+    }
 }
 
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2vw;
+    padding: 0 2vw;
 }
 
 .bg-dark {
@@ -358,7 +374,7 @@ header .rsvp {
 }
 
 .space {
-    height: 15vh;
+    height: 5vh;
 }
 
 footer {
@@ -382,10 +398,8 @@ footer .footer-date {
 
 footer .footer-date p {
     font-family: 'Lora';
-    font-size: 8.8rem;
-    font-weight: 700;
-    margin: 0;
-
+    /* font-size: 8.8rem; */
+    font-size: 5vw;
     animation: footer-date 10s linear infinite alternate;
 }
 
