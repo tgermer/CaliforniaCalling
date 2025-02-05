@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora/static/Lora-SemiBold.ttf);
+    font-weight: 600;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --color-dark-bg: #000;
+    --color-dark-text: #000;
+    --color-light-bg: #ffffff;
+    --color-light-text: #fff;
+
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2vw;
+}
+
+.bg-dark {
+    background-color: var(--color-dark-bg);
+    color: var(--color-light-text)
+}
+
+.bg-light {
+    background-color: var(--color-light-bg);
+    color: var(--color-dark-text)
+}
+
+.d-flex {
+    display: flex;
+}
+
+.position-r {
+    position: relative;
+}
+
+.heading-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-size: 9.6rem;
+    text-transform: uppercase;
+    line-height: .75em;
+    text-align: center;
+}
+
+h1 span {
+    font-family: 'Work Sans';
+    font-weight: 700;
+    color: var(--color-dark-text);
+    /* text-shadow: 0px 0px 4px white; */
+    -webkit-text-stroke: 1px var(--color-light-text);
+    font-size: inherit;
+    display: block;
+}
+
+h2 {
+    font-size: 8.358rem;
+    font-weight: 700;
+    line-height: 8.23rem;
+    letter-spacing: -0.124;
+}
+
+header {
+    background-color: var(--color-dark-bg);
+}
+
+header .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-light-text);
+}
+
+.h-line {
+    height: 186px;
+    background-color: var(--color-light-bg);
+    width: .5px;
+    margin-bottom: 5rem;
+}
+
+header p {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin: 2rem;
+    text-align: center;
+}
+
+header .rsvp {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 14vh;
+}
+
+header .rsvp p {
+    border: 1px solid var(--color-light-text);
+    padding: .5em 1em;
+    margin: 0;
+}
+
+/* Main */
+
+.numbers {
+    background-color: var(--color-dark-bg);
+    padding-bottom: 8vh;
+}
+
+.numbers p {
+    font-size: 8.6rem;
+    font-family: 'Inter';
+    letter-spacing: -0.248rem;
+    line-height: 1.068;
+    color: var(--color-light-text);
+    max-width: 89%;
+    margin-bottom: 10vh;
+}
+
+.numbers .number {
+    margin-bottom: 2rem;
+}
+
+.numbers .lable {
+    font-size: 1.4rem;
+    letter-spacing: normal;
+    font-family: 'Work Sans';
+    margin-bottom: 1rem;
+}
+
+.california-map {
+    background-image: url('../img/map.svg');
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: bottom right;
+}
+
+.stuck-in-the-middle .wrapper {
+    max-width: 530px;
+    margin: 0 auto;
+    padding: 40vh 0;
+}
+
+.stuck-in-the-middle p {
+    font-family: 'Work Sans';
+    font-size: 1.58rem;
+    line-height: 2.96rem;
+    letter-spacing: -.041rem;
+    max-width: 85%;
+}
+
+.stuck-in-the-middle .wrapper:nth-child(2) {
+    margin-bottom: 50vh;
+    background-color: red;
+}
+
+.s001, .s002 {
+    margin-bottom: -15vh;
+}
+
+.s002 {
+    padding-top: 15vh
+}
+
+.heading-text div {
+    max-width: 50%;
+}
+
+.heading-text h2 {
+    max-width: 200px;
+}
+
+.heading-text .heading p {
+    font-size: 1.975rem;
+    margin-bottom: 2vh;
+}
+
+.heading-text .content p {
+    font-family: 'Inter';
+    font-size: 1.897rem;
+}
+
+.author {
+    font-size: 1.4rem !important;
+    font-family: 'Work Sans' !important;
+    font-weight: 400 !important;
+    margin-top: 1.4rem;
+}
+
+.author::before {
+    content: "\2014";
+    margin-right: 1rem;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.bear1 {
+    max-width: 65%;
+}
+
+.bear2 {
+    max-width: 30%;
+    margin-left: -5%;
+    z-index: 10;
+}
+
+.poster1 {
+    max-width: 30%;
+    z-index: 10;
+}
+
+.poster2 {
+    max-width: 65%;
+    margin-left: -5%;
+}
+
+.text-rotate {
+    max-width: 20%;
+    align-self: flex-end;
+    /* background-color: red; */
+    margin-bottom: -2vh;
+    margin-left: -8%;
+    /* filter: invert(1); */
+
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(300deg);
+    }
+}
+
+.space {
+    height: 15vh;
+}
+
+footer {
+    padding: 16vh 0 2vh 0;
+    margin-top: 15vh;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .footer-date {
+    display: inline-block;
+    background-color: var(--color-light-bg);
+    color: var(--color-dark-text);
+    padding: 0 2em;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -400px;
+    top: 20rem;
+    width: 1200px;
+}
+
+footer .footer-date p {
+    font-family: 'Lora';
+    font-size: 8.8rem;
+    font-weight: 700;
+    margin: 0;
+
+    animation: footer-date 10s linear infinite alternate;
+}
+
+footer .footer-date p span {
+    font-family: inherit;
+    color: transparent;
+    /* text-shadow: 0px 0px 4px white; */
+    -webkit-text-stroke: 2px var(--color-dark-text);
+    font-size: inherit;
+}
+
+@keyframes footer-date {
+    from {
+        transform: translate(200px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+footer p, footer .icon{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+footer .content {
+    max-width: 50%;
+}
+
+footer .heighlight {
+    font-family: 'Inter';
+    font-size: 2.4rem;
+    line-height: 4.61rem;
+}
+
+footer .rsvp {
+    border: 1px solid var(--color-light-text);
+    padding: .5em 1.4em;
+    display: inline-block;
+    margin-bottom: 10vh;
+}
+
+footer .icon {
+    width: 10px;
+    margin-right: .2rem;
+}
+
+footer .logo {
+    width: 30px;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
