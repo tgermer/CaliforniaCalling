@@ -356,13 +356,18 @@ footer .rsvp {
     margin-bottom: 10vh;
 }
 
+footer .social-icons, footer .logo-set {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
 footer .icon {
     width: 10px;
-    margin-right: .2rem;
 }
 
 footer .logo {
-    width: 30px;
+    width: 50px;
 }
 
 footer .footer {
