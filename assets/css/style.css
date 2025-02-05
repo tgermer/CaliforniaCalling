@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Inter';
-    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Work Sans';
-    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Lora';
-    src: url(../fonts/Lora/static/Lora-SemiBold.ttf);
+    src: url(../fonts/Lora/static/Lora-SemiBold.ttf) format('truetype');
     font-weight: 600;
 }
 * {
@@ -21,6 +21,8 @@
     font-family: 'Work Sans';
     font-weight: 400;
     font-size: 62.5%;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
 }
 
 body {
@@ -42,7 +44,7 @@ img {
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 2vw;
+    padding: 2vw;
 }
 
 .bg-dark {
@@ -185,10 +187,68 @@ header .rsvp {
     background-position: bottom right;
 }
 
+.stuck-in-the-middle {
+    position: relative;
+}
+
+.img-a {
+    position: absolute;
+    z-index: 0;
+}
+
+.action1 {
+    max-width: 30vw;
+    height: auto;
+    right: 10vw;
+    top:-8vh;
+}
+
+.action2 {
+    max-width: 25vw;
+    height: auto;
+    left: 7vw;
+    top: 18vh;
+}
+
+.action3 {
+    max-width: 25vw;
+    height: auto;
+    right: 0;
+    top: 75vh;
+}
+
+.action4 {
+    max-width: 25vw;
+    height: auto;
+    left: 10vw;
+    bottom: 70vh;
+}
+
+.action5 {
+    max-width: 25vw;
+    height: auto;
+    right: 8vw;
+    top: 95vh;
+}
+
+.action6 {
+    max-width: 25vw;
+    height: auto;
+    left: 0;
+    bottom: 20vh;
+}
+
+.action7 {
+    max-width: 35vw;
+    height: auto;
+    right: 14vw;
+    bottom: -5vh;
+}
+
 .stuck-in-the-middle .wrapper {
     max-width: 530px;
     margin: 0 auto;
-    padding: 40vh 0;
+    padding: 40vh 2vw;
 }
 
 .stuck-in-the-middle p {
@@ -201,7 +261,7 @@ header .rsvp {
 
 .stuck-in-the-middle .wrapper:nth-child(2) {
     margin-bottom: 50vh;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .s001, .s002 {
