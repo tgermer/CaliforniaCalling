@@ -110,6 +110,27 @@
             </filter>
         </svg>
 
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="0"
+            height="0"
+            style="position: absolute"
+        >
+            <filter id="color-filter-1" color-interpolation-filters="sRGB">
+                <!-- Setzt alle Farben auf #4223b3 -->
+                <feFlood flood-color="#4223b3" result="flood" />
+                <!-- Behält die Originalform des Elements -->
+                <feComposite
+                    in="flood"
+                    in2="SourceGraphic"
+                    operator="in"
+                    result="colored"
+                />
+                <!-- Kombiniert den farbigen Inhalt mit dem Original -->
+                <feBlend in="colored" in2="SourceGraphic" mode="normal" />
+            </filter>
+        </svg>
+
         <header>
             <div class="wrapper">
                 <div class="h-line"></div>
@@ -232,7 +253,7 @@
                         <img class="bear2" src="./assets/img/gb2.png" alt="" />
                         <img
                             class="text-rotate"
-                            src="./assets/img/cc-circle-2.png"
+                            src="./assets/img/cc-circle-2-white.png"
                             alt=""
                         />
                     </div>

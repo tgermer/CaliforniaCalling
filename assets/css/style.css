@@ -45,6 +45,10 @@ img {
     .img-a {
         filter: url(#color-filter);
     }
+
+    .text-rotate {
+        filter: url(#color-filter-1);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +58,10 @@ img {
         --color-dark-text: #000;
         --color-light-bg: #ffffff;
         --color-light-text: #fff;
+    }
+
+    .text-rotate {
+        filter: invert(1);
     }
 }
 
@@ -366,10 +374,8 @@ header .rsvp {
 .text-rotate {
     max-width: 20%;
     align-self: flex-end;
-    /* background-color: red; */
     margin-bottom: -2vh;
     margin-left: -8%;
-    /* filter: invert(1); */
 
     animation: rotate 10s linear infinite;
 }
