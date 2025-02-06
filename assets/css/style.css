@@ -116,6 +116,7 @@ h2 {
     font-weight: 700;
     line-height: .9em;
     letter-spacing: -0.124;
+    margin-bottom: 1rem;
 }
 
 a {
@@ -209,6 +210,11 @@ header .rsvp {
 
 .stuck-in-the-middle {
     position: relative;
+}
+
+.on-top {
+    position: relative;
+    z-index: 100;
 }
 
 .img-a {
@@ -525,5 +531,9 @@ footer .footer {
         position: absolute;
         left: -10vw;
         top: 5rem;
+    }
+
+    footer .footer-date p {
+        margin-bottom: 0;
     }
 }
