@@ -42,7 +42,7 @@ img {
     --color-light-text: #fff;
     }
 
-    .img-a {
+    .img-a, .img-color-filter {
         filter: url(#color-filter);
     }
 
