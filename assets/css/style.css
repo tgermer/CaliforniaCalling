@@ -380,7 +380,7 @@ header .rsvp {
     }
 
     to {
-        transform: rotate(300deg);
+        transform: rotate(360deg);
     }
 }
 
